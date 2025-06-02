@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="de" ng-app="app" ng-csp>
+<html lang="de">
 <head>
   <meta charset="utf-8"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="mobile-web-app-capable" content="yes"/>
-  <title>حساب علامة البجروت حسب النظام الالماني  ,;</title>
+  <title>حساب علامة البجروت حسب النظام الالماني</title>
   <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   
-  <!-- Onsen UI Stylesheets -->
-  <link rel="stylesheet" href="lib/onsen/css/onsenui.css"/>
-  <link rel="stylesheet" href="lib/onsen/css/onsen-css-components-blue-basic-theme.css"/>
-  <link rel="stylesheet" href="lib/angular/angular-csp.css"/>
-  
-  
   <style>
     body {
-  font-family: 'Arial', sans-serif;
-  background-color: lightgrey;
-  color: #333;
-  text-align: right;
-  direction: rtl;
-}
+      font-family: 'Arial', sans-serif;
+      background-color: lightgrey;
+      color: #333;
+      text-align: right;
+      direction: rtl;
+    }
     .header {
       text-align: center;
       margin-top: 20px;
@@ -29,12 +23,6 @@
     .header img {
       width: 50%;
       height: 350px;
-    }
-    .back-button {
-      margin: 20px;
-      color: #21A957;
-      font-size: 1.2em;
-      cursor: pointer;
     }
     .form-container {
       margin: 20px;
@@ -63,39 +51,35 @@
     }
     .calculate-btn {
       background-color: red;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-}
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
     .calculate-btn:hover {
       background-color: #0056b3;
     }
-		
-h4 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
+    h4, p, div {
+      text-align: center;
+    }
+    #ShowGrades {
+      margin: 20px;
+      font-size: 1.2em;
+      color: #21A957;
+    }
   </style>
   
-  <script src="scripts/platformOverrides.js"></script>
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/onsen/js/onsenui.js"></script>
-  <script src="abitur.js"></script>
+  <script src="index.js"></script>
 </head>
 <body>
-
-  <!-- Header Section -->
   <div class="header">
     <img src="darblogo.jpg.png" alt="Logo">
   </div>
 
- 
-
- 
   <div class="form-container">
-    <h2> حساب معدل البجروت بواسطة آلة حاسبة درب</h2>
+    <h2>حساب معدل البجروت بواسطة آلة حاسبة درب</h2>
     <table>
       <thead>
         <tr>
@@ -116,7 +100,7 @@ div {text-align: center;}
           </td>
           <td><input type="number" id="ArabicGrade" name="ArabicGrade" value="0" min="0" max="100"></td>
         </tr>
-		 <tr>
+        <tr>
           <td>اللغة العبرية</td>
           <td>
             <select id="HebrewUnits" name="HebrewUnits">
@@ -128,8 +112,7 @@ div {text-align: center;}
           </td>
           <td><input type="number" id="HebrewGrade" name="HebrewGrade" value="0" min="0" max="100"></td>
         </tr>
-		
-			 <tr>
+        <tr>
           <td>اللغة الانجليزية</td>
           <td>
             <select id="EnglishUnits" name="EnglishUnits">
@@ -140,8 +123,7 @@ div {text-align: center;}
           </td>
           <td><input type="number" id="EnglishGrade" name="EnglishGrade" value="0" min="0" max="100"></td>
         </tr>
-		
-	     <tr>
+        <tr>
           <td>الرياضيات</td>
           <td>
             <select id="MathUnits" name="MathUnits">
@@ -152,135 +134,130 @@ div {text-align: center;}
           </td>
           <td><input type="number" id="MathGrade" name="MathGrade" value="0" min="0" max="100"></td>
         </tr>
-		   <tr>
+        <tr>
           <td>التاريخ</td>
           <td>
             <select id="HistoryUnits" name="HistoryUnits">
-             <OPTION value="1" selected>1</OPTION>
-		     <OPTION value="2">2</OPTION>
-		     <OPTION value="3">3</OPTION>
-			 <OPTION value="4">4</OPTION>
-			 <OPTION value="5">5</OPTION>
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
             </select>
           </td>
           <td><input type="number" id="HistoryGrade" name="HistoryGrade" value="0" min="0" max="100"></td>
         </tr>
-		  <tr>
+        <tr>
           <td>المدنيات</td>
           <td>
             <select id="MdniatUnits" name="MdniatUnits">
-             <OPTION value="1" selected>1</OPTION>
-		     <OPTION value="2">2</OPTION>
-		     <OPTION value="3">3</OPTION>
-			 <OPTION value="4">4</OPTION>
-			 <OPTION value="5">5</OPTION>
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
             </select>
           </td>
           <td><input type="number" id="MdniatGrade" name="MdniatGrade" value="0" min="0" max="100"></td>
         </tr>
-		  <tr>
+        <tr>
           <td>دين</td>
           <td>
-            <select id="Deen" name="MdniatUnits">
-			 <OPTION value="0">0</OPTION>
-             <OPTION value="1" selected>1</OPTION>
-		     <OPTION value="2">2</OPTION>
-		     <OPTION value="3">3</OPTION>
-			 <OPTION value="4">4</OPTION>
-			 <OPTION value="5">5</OPTION>
+            <select id="DeenUnits" name="DeenUnits">
+              <option value="0">0</option>
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
             </select>
           </td>
-          <td><input type="number" id="DeenGrade" name="MdniatGrade" value="0" min="0" max="100"></td>
+          <td><input type="number" id="DeenGrade" name="DeenGrade" value="0" min="0" max="100"></td>
         </tr>
-		  <tr>
+        <tr>
           <td>تخصص</td>
           <td>
-            <select id="T5sos" name="MdniatUnits">
-			<OPTION value="0" selected>0</OPTION>
-							<OPTION value="1">1</OPTION>
-							<OPTION value="2">2</OPTION>
-							<OPTION value="3">3</OPTION>
-							<OPTION value="4">4</OPTION>
-							<OPTION value="5">5</OPTION>	
-							<OPTION value="6" >6</OPTION>
-							<OPTION value="7">7</OPTION>
-							<OPTION value="8">8</OPTION>
-							<OPTION value="9">9</OPTION>
-							<OPTION value="10">10</OPTION>	
+            <select id="T5sosUnits" name="T5sosUnits">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
             </select>
           </td>
-          <td><input type="number" id="t5sosGrade" name="MdniatGrade" value="0" min="0" max="100"></td>
+          <td><input type="number" id="T5sosGrade" name="T5sosGrade" value="0" min="0" max="100"></td>
         </tr>
-		  <tr>
+        <tr>
           <td>تخصص ثاني</td>
           <td>
-            <select id="T5sos2" name="MdniatUnits">
-			<OPTION value="0" selected>0</OPTION>
-							<OPTION value="1">1</OPTION>
-							<OPTION value="2">2</OPTION>
-							<OPTION value="3">3</OPTION>
-							<OPTION value="4">4</OPTION>
-							<OPTION value="5">5</OPTION>	
-							<OPTION value="6" >6</OPTION>
-							<OPTION value="7">7</OPTION>
-							<OPTION value="8">8</OPTION>
-							<OPTION value="9">9</OPTION>
-							<OPTION value="10">10</OPTION>	
+            <select id="T5sos2Units" name="T5sos2Units">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
             </select>
           </td>
-          <td><input type="number" id="t5sos2Grade" name="MdniatGrade" value="0" min="0" max="100"></td>
+          <td><input type="number" id="T5sos2Grade" name="T5sos2Grade" value="0" min="0" max="100"></td>
         </tr>
-		  <tr>
+        <tr>
           <td>تخصص ثالث</td>
           <td>
-            <select id="T5sos3" name="MdniatUnits">
-			<OPTION value="0" selected>0</OPTION>
-							<OPTION value="1">1</OPTION>
-							<OPTION value="2">2</OPTION>
-							<OPTION value="3">3</OPTION>
-							<OPTION value="4">4</OPTION>
-							<OPTION value="5">5</OPTION>	
-							<OPTION value="6" >6</OPTION>
-							<OPTION value="7">7</OPTION>
-							<OPTION value="8">8</OPTION>
-							<OPTION value="9">9</OPTION>
-							<OPTION value="10">10</OPTION>	
+            <select id="T5sos3Units" name="T5sos3Units">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
             </select>
           </td>
-          <td><input type="number" id="t5sos3Grade" name="MdniatGrade" value="0" min="0" max="100"></td>
+          <td><input type="number" id="T5sos3Grade" name="T5sos3Grade" value="0" min="0" max="100"></td>
         </tr>
-		
-		  <tr>
+        <tr>
           <td>تخصص رابع</td>
           <td>
-            <select id="T5sos4" name="MdniatUnits">
-			<OPTION value="0" selected>0</OPTION>
-							<OPTION value="1">1</OPTION>
-							<OPTION value="2">2</OPTION>
-							<OPTION value="3">3</OPTION>
-							<OPTION value="4">4</OPTION>
-							<OPTION value="5">5</OPTION>	
-							<OPTION value="6" >6</OPTION>
-							<OPTION value="7">7</OPTION>
-							<OPTION value="8">8</OPTION>
-							<OPTION value="9">9</OPTION>
-							<OPTION value="10">10</OPTION>	
+            <select id="T5sos4Units" name="T5sos4Units">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
             </select>
           </td>
-          <td><input type="number" id="t5sos4Grade" name="MdniatGrade" value="0" min="0" max="100"></td>
+          <td><input type="number" id="T5sos4Grade" name="T5sos4Grade" value="0" min="0" max="100"></td>
         </tr>
-		
-       
       </tbody>
     </table>
     <button class="calculate-btn" onclick="berechne();">حساب المعدل</button>
   </div>
 
-
   <div id="ShowGrades"></div>
-<h4>
-Copyright &copy <script type="text/javascript"> document.write(new Date().getFullYear());</script> | DARB International LTD. Thank you for visiting!
-</h4>
+  <h4>
+    Copyright © <script type="text/javascript"> document.write(new Date().getFullYear());</script> | DARB International LTD. Thank you for visiting!
+  </h4>
 </body>
-
 </html>
