@@ -1,54 +1,35 @@
-function _0x59b2(_0x20811a, _0x28473f) {
-    var _0x23223e = _0x2322();
-    return _0x59b2 = function(_0x59b2e1, _0xc0f997) {
-        _0x59b2e1 = _0x59b2e1 - 0x1f2;
-        var _0x56d3fa = _0x23223e[_0x59b2e1];
-        return _0x56d3fa;
-    }
-    ,
-    _0x59b2(_0x20811a, _0x28473f);
-}
-(function(_0x518ef9, _0x36ab20) {
-    var _0x346780 = _0x59b2
-      , _0x25c34a = _0x518ef9();
-    while (!![]) {
-        try {
-            var _0x3abaf7 = parseInt(_0x346780(0x208)) / 0x1 + parseInt(_0x346780(0x20b)) / 0x2 + parseInt(_0x346780(0x20f)) / 0x3 * (-parseInt(_0x346780(0x1f9)) / 0x4) + parseInt(_0x346780(0x212)) / 0x5 + -parseInt(_0x346780(0x1f2)) / 0x6 * (-parseInt(_0x346780(0x205)) / 0x7) + parseInt(_0x346780(0x206)) / 0x8 * (parseInt(_0x346780(0x209)) / 0x9) + -parseInt(_0x346780(0x211)) / 0xa;
-            if (_0x3abaf7 === _0x36ab20)
-                break;
-            else
-                _0x25c34a['push'](_0x25c34a['shift']());
-        } catch (_0x11662e) {
-            _0x25c34a['push'](_0x25c34a['shift']());
-        }
-    }
-}(_0x2322, 0x51b1b));
 function berechne() {
-    var _0x2311e6 = _0x59b2
-      , _0x199c30 = parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x201))[_0x2311e6(0x1f5)][document[_0x2311e6(0x204)]('ArabicUnits')[_0x2311e6(0x202)]][_0x2311e6(0x207)]) + parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x1fc))[_0x2311e6(0x1f5)][document[_0x2311e6(0x204)]('HebrewUnits')['selectedIndex']]['value']) + parseInt(document[_0x2311e6(0x204)]('EnglishUnits')['options'][document[_0x2311e6(0x204)](_0x2311e6(0x1fa))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) + parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x1fb))[_0x2311e6(0x1f5)][document[_0x2311e6(0x204)](_0x2311e6(0x1fb))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) + parseInt(document['getElementById']('HistoryUnits')[_0x2311e6(0x1f5)][document['getElementById'](_0x2311e6(0x1fd))['selectedIndex']][_0x2311e6(0x207)]) + parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x1f4))[_0x2311e6(0x1f5)][document['getElementById'](_0x2311e6(0x1f4))[_0x2311e6(0x202)]]['value']) + parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x210))[_0x2311e6(0x1f5)][document[_0x2311e6(0x204)](_0x2311e6(0x210))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) + parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x20a))[_0x2311e6(0x1f5)][document['getElementById'](_0x2311e6(0x20a))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) + parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x200))[_0x2311e6(0x1f5)][document[_0x2311e6(0x204)](_0x2311e6(0x200))['selectedIndex']][_0x2311e6(0x207)]) + parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x20e))['options'][document[_0x2311e6(0x204)](_0x2311e6(0x20e))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) + parseInt(document['getElementById'](_0x2311e6(0x203))[_0x2311e6(0x1f5)][document[_0x2311e6(0x204)](_0x2311e6(0x203))[_0x2311e6(0x202)]]['value'])
-      , _0x5993dd = parseInt(document['getElementById'](_0x2311e6(0x201))['options'][document['getElementById'](_0x2311e6(0x201))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) * parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x1f6))[_0x2311e6(0x207)])
-      , _0x437b0d = parseInt(document[_0x2311e6(0x204)]('HebrewUnits')['options'][document[_0x2311e6(0x204)](_0x2311e6(0x1fc))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) * parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x1f8))[_0x2311e6(0x207)])
-      , _0x1b7e96 = parseInt(document[_0x2311e6(0x204)]('EnglishUnits')['options'][document[_0x2311e6(0x204)](_0x2311e6(0x1fa))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) * parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x214))[_0x2311e6(0x207)])
-      , _0x4815c3 = parseInt(document[_0x2311e6(0x204)]('MathUnits')[_0x2311e6(0x1f5)][document['getElementById'](_0x2311e6(0x1fb))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) * parseInt(document[_0x2311e6(0x204)]('MathGrade')[_0x2311e6(0x207)])
-      , _0x49ed6f = parseInt(document[_0x2311e6(0x204)]('HistoryUnits')['options'][document['getElementById']('HistoryUnits')[_0x2311e6(0x202)]][_0x2311e6(0x207)]) * parseInt(document['getElementById'](_0x2311e6(0x1f3))[_0x2311e6(0x207)])
-      , _0x2dbcef = parseInt(document['getElementById'](_0x2311e6(0x1f4))[_0x2311e6(0x1f5)][document['getElementById']('MdniatUnits')[_0x2311e6(0x202)]][_0x2311e6(0x207)]) * parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x20c))[_0x2311e6(0x207)])
-      , _0x19631f = parseInt(document[_0x2311e6(0x204)]('T5sos')[_0x2311e6(0x1f5)][document[_0x2311e6(0x204)](_0x2311e6(0x210))['selectedIndex']][_0x2311e6(0x207)]) * parseInt(document[_0x2311e6(0x204)]('t5sosGrade')['value'])
-      , _0x579caf = parseInt(document[_0x2311e6(0x204)]('T5sos2')['options'][document[_0x2311e6(0x204)]('T5sos2')[_0x2311e6(0x202)]]['value']) * parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x213))[_0x2311e6(0x207)])
-      , _0x215057 = parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x203))[_0x2311e6(0x1f5)][document[_0x2311e6(0x204)](_0x2311e6(0x203))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) * parseInt(document['getElementById'](_0x2311e6(0x1f7))['value'])
-      , _0x3f270b = parseInt(document[_0x2311e6(0x204)]('T5sos4')[_0x2311e6(0x1f5)][document[_0x2311e6(0x204)](_0x2311e6(0x20e))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) * parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x20d))[_0x2311e6(0x207)])
-      , _0x1e015f = parseInt(document[_0x2311e6(0x204)](_0x2311e6(0x200))['options'][document['getElementById'](_0x2311e6(0x200))[_0x2311e6(0x202)]][_0x2311e6(0x207)]) * parseInt(document['getElementById']('DeenGrade')['value'])
-      , _0x4f68a0 = (_0x5993dd + _0x437b0d + _0x1b7e96 + _0x4815c3 + _0x49ed6f + _0x2dbcef + _0x19631f + _0x579caf + _0x215057 + _0x3f270b + _0x1e015f) / _0x199c30
-      , _0xa55cb6 = 0x1 + 0x3 * ((0x64 - _0x4f68a0) / 0x2d)
-      , _0xbfb7ab = _0x4f68a0[_0x2311e6(0x1fe)](0x2)
-      , _0x2f4f76 = _0xa55cb6[_0x2311e6(0x1fe)](0x2);
-    alert(_0x2311e6(0x1ff) + _0xbfb7ab),
-    alert('معدلك\x20العام\x20\x20بالنظام\x20الالماني\x20\x20' + _0x2f4f76);
-}
-function _0x2322() {
-    var _0x3fb10f = ['T5sos', '17612650VfpTLQ', '3267375EOmQJr', 't5sos2Grade', 'EnglishGrade', '997098VDCBur', 'HistoryGrade', 'MdniatUnits', 'options', 'ArabicGrade', 't5sos3Grade', 'HebrewGrade', '8TWDGPh', 'EnglishUnits', 'MathUnits', 'HebrewUnits', 'HistoryUnits', 'toFixed', 'معدلك\x20العام\x20حسب\x20موقع\x20برليني\x20\x20', 'Deen', 'ArabicUnits', 'selectedIndex', 'T5sos3', 'getElementById', '21vslNSP', '312CaFvJW', 'value', '641067buXXkj', '69723IWiWLl', 'T5sos2', '799492AuXakI', 'MdniatGrade', 't5sos4Grade', 'T5sos4', '598629llMYqe'];
-    _0x2322 = function() {
-        return _0x3fb10f;
+  const subjects = [
+    { unitsId: "ArabicUnits", gradeId: "ArabicGrade" },
+    { unitsId: "HebrewUnits", gradeId: "HebrewGrade" },
+    { unitsId: "EnglishUnits", gradeId: "EnglishGrade" },
+    { unitsId: "MathUnits", gradeId: "MathGrade" },
+    { unitsId: "HistoryUnits", gradeId: "HistoryGrade" },
+    { unitsId: "MdniatUnits", gradeId: "MdniatGrade" },
+    { unitsId: "DeenUnits", gradeId: "DeenGrade" },
+    { unitsId: "T5sosUnits", gradeId: "T5sosGrade" },
+    { unitsId: "T5sos2Units", gradeId: "T5sos2Grade" },
+    { unitsId: "T5sos3Units", gradeId: "T5sos3Grade" },
+    { unitsId: "T5sos4Units", gradeId: "T5sos4Grade" }
+  ];
+
+  let totalUnits = 0;
+  let weightedSum = 0;
+
+  subjects.forEach(subject => {
+    const units = parseInt(document.getElementById(subject.unitsId).value) || 0;
+    const grade = parseInt(document.getElementById(subject.gradeId).value) || 0;
+    if (units > 0 && grade > 0) {
+      totalUnits += units;
+      weightedSum += units * grade;
     }
-    ;
-    return _0x2322();
+  });
+
+  const average = totalUnits > 0 ? (weightedSum / totalUnits) : 0;
+  const germanGrade = totalUnits > 0 ? (1 + 3 * ((100 - average) / 45)) : 0;
+
+  document.getElementById("ShowGrades").innerHTML = `
+    <h3>المعدل: ${average.toFixed(2)}</h3>
+    <h3>المعدل بالنظام الألماني: ${germanGrade.toFixed(2)}</h3>
+  `;
 }
